@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchmaking Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="info-message">
+        請使用 NCKU Gmail 登入 (@gs.ncku.edu.tw)
+    </div>
+    <form id="matchmakingForm">
+        <div class="form-group">
+            <label>我是</label>
+            <div class="radio-group">
+                <label for="male"><input type="radio" id="male" name="gender" value="male" required>男生</label>
+                <label for="female"><input type="radio" id="female" name="gender" value="female">女生</label>
+                <label for="notdisclose"><input type="radio" id="notdisclose" name="gender"
+                        value="notdisclose">不願透露</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>我想找</label>
+            <div class="radio-group">
+                <label for="findMale"><input type="radio" id="findMale" name="preference" value="male"
+                        required>男生</label>
+                <label for="findFemale"><input type="radio" id="findFemale" name="preference" value="female">女生</label>
+                <label for="findAny"><input type="radio" id="findAny" name="preference" value="any">都可以</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bio">自我介紹</label>
+            <textarea id="bio" name="bio" rows="4" required placeholder="請介紹一下你自己，內容會寄給對方喔～"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="email">聯絡用信箱</label>
+            <input type="email" id="email" name="email" required placeholder="請填寫你的聯絡用信箱，配對成功時會寄信到這個信箱喔～">
+        </div>
+        <button type="submit">送出</button>
+    </form>
+</body>
+
+</html>
